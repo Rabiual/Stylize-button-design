@@ -1,0 +1,1413 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*=============================
+    banner image part start  
+ ============================*/
+.banner-img{
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  background:url(../images/nature\ with\ hells.jpg)no-repeat center / cover;
+position: relative;
+z-index: 1;
+}
+.banner-img::after{
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589);
+  z-index:-1;
+}
+.banner-img h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 200px;
+}
+.button{
+  position: absolute;
+  content: " ";
+  top: 286px;
+  left: 280px;
+  
+}
+/*=============================
+    banner image part end  
+ ============================*/
+
+/*=============================
+    Home button part start  
+ ============================*/
+
+/* home button start  */
+.home{
+  margin: 50px 20px;
+  float: left;
+}
+.home a{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  background-color: chocolate;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+.home a::after{
+  position: absolute;
+  content: " ";
+  top: -20px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.home a:hover{
+  color:blue;
+}
+.home a:hover::after{
+  width: 100%;
+}
+.home a::before{
+  position: absolute;
+  content:'';
+  bottom:-20px;
+  left:0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.home a:hover::before{
+  width: 100%;
+}
+.inner-home{
+  position: relative;
+}
+.inner-home::after{
+  position:absolute;
+  content: "";
+  top: -30px;
+  left: 0;
+  width: 0;
+  height:2px;
+  background-color: green;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.inner-home:hover::after{
+  width: 60px;
+}
+ .inner-home::before{
+  position:absolute;
+  content:'';
+  bottom: -30px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: blue;
+  transition: 0.5s ;
+  -webkit-transition: 0.5s ;
+  -moz-transition: 0.5s ;
+  -ms-transition: 0.5s ;
+  -o-transition: 0.5s ;
+}
+ .inner-home:hover::before{
+  width: 100px;
+}  
+/*=============================
+    Home button part end  
+ ============================*/
+
+/*=============================
+    About part start  
+ ============================*/
+
+.about{
+  margin: 50px 20px;
+  float: left;
+}
+.about a{
+  font-size: 30px;
+  font-weight: bold;
+  padding:20px 30px;
+  color: cadetblue;
+  background-color: blanchedalmond;
+  position: relative;
+}
+.about a::after{
+  position:absolute;
+  content:"";
+  top: -20px;
+  left: 0;
+  width:0%;
+  height:2px;
+  background-color: green;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.about a:hover::after{
+  width: 100%;
+}
+
+.about a::before{
+  position:absolute;
+  content: " ";
+  bottom: -20px;
+  right:0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition:0.5s ;
+  -webkit-transition:0.5s ;
+  -moz-transition:0.5s ;
+  -ms-transition:0.5s ;
+  -o-transition:0.5s ;
+}
+.about a:hover::before{
+  width: 100%;
+}
+.inner-about{
+  position: relative;
+}
+.inner-about::after{
+  position:absolute;
+  content:" ";
+  top: -30px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.inner-about:hover::after{
+  width: 50%;
+}
+
+.inner-about::before{
+  position:absolute;
+  content: " ";
+  bottom: -30px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition:0.5s ;
+  -webkit-transition:0.5s ;
+  -moz-transition:0.5s ;
+  -ms-transition:0.5s ;
+  -o-transition:0.5s ;
+}
+
+.inner-about:hover::before{
+  width: 50%;
+}
+/*=============================
+    About part end  
+ ============================*/
+
+/*=============================
+    Contact button start  
+ ============================*/
+
+.contact{
+  margin: 50px 20px;
+  float: left;
+}
+.contact a{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(21, 119, 119);
+  color: white;
+  padding: 20px 30px;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+position: relative;
+}
+.contact a::after{
+  position: absolute;
+  content:"";
+  top: -20px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.contact a:hover::after{
+  width: 100%;
+}
+.contact a::before{
+  position: absolute;
+  content: " ";
+  bottom: -20px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  background-color: red;
+}
+.contact a:hover::before{
+  width: 100%;
+}
+.inner-contact{
+  position:relative;
+}
+.inner-contact::after{
+  position:absolute;
+  content:"";
+  top: -30px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+}
+.inner-contact:hover::after{
+  width: 50%;
+}
+.inner-contact::before{
+  position:absolute;
+ content: " ";
+  bottom: -30px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+}
+.inner-contact:hover::before{
+  width: 50%;
+}
+/*=============================
+    Contact button end  
+ ============================*/
+
+/*=============================
+    Tutorial button start  
+ ============================*/
+
+.tutorial{
+  margin: 50px 20px;
+  float: left;
+}
+.tutorial a{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  position: relative;
+  background-color: crimson;
+  color: white;
+  position: relative;
+ 
+}
+.tutorial a::after{
+  position: absolute;
+  content: " ";
+  top: -20px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition:0.5s ;
+  -webkit-transition:0.5s ;
+  -moz-transition:0.5s ;
+  -ms-transition:0.5s ;
+  -o-transition:0.5s ;
+}
+.tutorial a:hover::after{
+  width:100%;
+}
+.tutorial a::before{
+  position: absolute;
+  content: " ";
+  bottom: -20px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: orangered;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.tutorial a:hover::before{
+  width: 100%;
+}
+.inner-tutorial{
+  position: relative;
+}
+.inner-tutorial::after{
+  position:absolute;
+  content: " ";
+  top: -30px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.inner-tutorial:hover::after{
+  width: 50%;
+}
+.inner-tutorial::before{
+  position:absolute;
+  content: " ";
+  bottom: -30px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+  background-color: blue;
+}
+.inner-tutorial:hover::before{
+width: 50%;
+}
+/*=============================
+    Tutorial button start  
+ ============================*/
+
+/*=============================
+    Explore button start
+ ============================*/
+
+
+.explore{
+  margin: 50px 20px;
+  float: left;
+
+}
+.explore a{
+font-size: 30px;
+font-weight: bold;
+text-transform: uppercase;
+padding: 20px 30px;
+background-color: chartreuse;
+color: tomato;
+position: relative;
+}
+.explore a::after{
+  position: absolute;
+  content: " ";
+  top: -20px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.explore a:hover::after{
+  width: 100%;
+}
+.explore a::before{
+  position: absolute;
+  content: " ";
+  bottom: -20px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.explore a:hover::before{
+width: 100%;
+}
+.inner-explore{
+  position: relative;
+}
+.inner-explore::after{
+  position: absolute;
+  content: " ";
+  top: -30px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.inner-explore:hover::after{
+  width:50%;
+}
+.inner-explore::before{
+  position: absolute;
+  content:" ";
+  bottom:-30px ;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.inner-explore:hover::before{
+  width:50%;
+}
+/*=============================
+    Explore button end
+ ============================*/
+
+/*=============================
+  Info button start
+ ============================*/
+.info{
+  margin: 50px 20px;
+  float: left;
+}
+.info a{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform:capitalize;
+  padding: 20px 30px;
+  position: relative;
+  background-color: burlywood;
+  color: blue;
+}
+.info a::after{
+  position: absolute;
+  content: " ";
+  top: -20px;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: chocolate;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.info a:hover::after{
+  width: 100%;
+}
+.info a::before{
+  position: absolute;
+  content: " ";
+  bottom: -20px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: cadetblue;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.info a:hover::before{
+  width: 100%;
+}
+.inner-info{
+  position: relative;
+}
+.inner-info::after{
+  position: absolute;
+  content: " ";
+  top: -30px;
+  right:0;
+  width: 0%;
+  height: 2px;
+  background-color: blueviolet;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.inner-info:hover::after{
+  width: 50%;
+}
+.inner-info::before{
+  position: absolute;
+  content: " ";
+  bottom: -30px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.inner-info:hover::before{
+  width: 50%;
+}
+/*=============================
+    Info button end
+ ============================*/
+
+/*==================================
+    Stylize button practice start
+ =================================*/
+
+.btn1{
+  margin: 120px 30px;
+float: left;
+}
+.btn1 a{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 1;
+  border: 1px solid blue;
+  border-radius:20px  20px 0 0 ;
+  -webkit-border-radius:20px  20px 0 0 ;
+  -moz-border-radius:20px  20px 0 0 ;
+  -ms-border-radius:20px  20px 0 0 ;
+  -o-border-radius:20px  20px 0 0 ;
+  color: blue;
+
+}
+.btn1 a:hover{
+  color: #fff;
+}
+.btn1 a::after{
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: brown;
+  z-index: -1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border-radius:20px  20px 0 0 ;
+  -webkit-border-radius:20px  20px 0 0 ;
+  -moz-border-radius:20px  20px 0 0 ;
+  -ms-border-radius:20px  20px 0 0 ;
+  -o-border-radius:20px  20px 0 0 ;
+}
+.btn1 a:hover::after{
+  height: 100%;
+}
+/*==================================
+    Stylize button practice end
+ =================================*/
+
+ /*==================================
+    stylize button two start 
+ =================================*/
+.btn2{
+  margin: 100px 30px;
+  float: left;
+  /* overflow: hidden; */
+}
+.btn2 a{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  border: 1px solid red;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.btn2 a:hover{
+  color: white;
+
+}
+.btn2 a::after{
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  border-radius: 50% 50% 0 0;
+  -webkit-border-radius: 50% 50% 0 0;
+  -moz-border-radius: 50% 50% 0 0;
+  -ms-border-radius: 50% 50% 0 0;
+  -o-border-radius: 50% 50% 0 0;
+  z-index: -1;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.btn2 a:hover::after{
+height: 100%;
+background-color: tomato;
+
+}
+ /*==================================
+    stylize button two end
+ =================================*/
+
+ /*==================================
+     Button three start
+ =================================*/
+
+.btn3{
+  margin: 100px 30px;
+  float: left;
+  overflow: hidden;
+}
+.btn3 a{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  background-color: transparent;
+  color: red;
+  position: relative;
+  border: 1px solid red;
+  z-index: 1;
+  display: inline-block;
+}
+.btn3 a:hover{
+  color: #fff;
+}
+.btn3 a::after{
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  background-color: green;
+  border-radius: 50% 50% 0 0;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+  -webkit-border-radius: 50% 50% 0 0;
+  -moz-border-radius: 50% 50% 0 0;
+  -ms-border-radius: 50% 50% 0 0;
+  -o-border-radius: 50% 50% 0 0;
+}
+.btn3 a:hover::after{
+height: 180%;
+
+}
+ /*==================================
+      Button three end
+ =================================*/
+
+  /*==================================
+       Button four start 
+ =================================*/
+.btn4{
+  margin: 100px 30px;
+  float: left;
+  overflow: hidden;
+}
+.btn4 a{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  background-color: transparent;
+  color: orchid;
+  position: relative;
+  border: 1px solid blue;
+
+  z-index: 1;
+  display: inline-block;
+}
+.btn4 a:hover{
+  color:red;
+}
+.btn4 a::after{
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+  background-color: aqua;
+  border-radius: 0 0 50% 50%;
+  -webkit-border-radius: 0 0 50% 50%;
+  -moz-border-radius: 0 0 50% 50%;
+  -ms-border-radius: 0 0 50% 50%;
+  -o-border-radius: 0 0 50% 50%;
+}
+.btn4 a:hover::after{
+  height: 180%;
+float: left;
+}
+
+  /*==================================
+        Button four end
+ =================================*/
+
+   /*==================================
+       Button five start
+   =================================*/
+
+.btn5{
+margin: 100px 30px;
+float: left;
+overflow: hidden;
+}
+
+.btn5 a{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid black;
+  display: inline-block;
+z-index: 1;
+}
+.btn5 a:hover{
+  color: #fff;
+}
+.btn5 a::after{
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+    transition:0.5s;
+  background-color: firebrick;
+  -webkit-border-radius: 50% 50% 0 0;
+  -moz-border-radius: 50% 50% 0 0;
+  -ms-border-radius: 50% 50% 0 0;
+  -o-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn5 a:hover::after{
+height: 180%;
+}
+   /*==================================
+       Button five end
+   =================================*/
+
+   /*==================================
+       Button six start
+   =================================*/
+.btn6{
+  margin: 20px 30px 100px 30px;
+  float: left;
+}
+.btn6 a{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  position:relative;
+  background-color: transparent;
+  z-index: 1;
+  border: 1px solid red;
+}
+.btn6 a:hover{
+color: white;
+}
+.btn6 a::after{
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: green;
+  z-index: -1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.btn6 a:hover::after{
+  width: 100%;
+}
+
+   /*==================================
+        Button six end
+   =================================*/
+
+   /*==================================
+        Button seven start
+   =================================*/
+.btn7{
+  margin: 20px 30px 100px 30px;
+  float: left;
+}
+.btn7 a{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  position:relative;
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+  z-index: 1;
+}
+.btn7 a:hover{
+color: #fff;
+}
+.btn7 a::after{
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background-color: tomato;
+  z-index: -1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.btn7 a:hover::after{
+width: 100%;
+}
+   /*==================================
+        Button seven end
+   =================================*/
+
+   /*==================================
+        Button eight start
+   =================================*/
+
+
+.btn8{
+  margin: 20px 30px 100px 30px;
+  float: left;
+}
+.btn8 a{
+font-size: 30px;
+font-weight: bold;
+text-transform: uppercase;
+padding: 20px 30px;
+border: 1px solid red;
+background-color: transparent;
+position: relative;
+color: cadetblue;
+
+z-index: 1;
+}
+.btn8 a:hover{
+  color:chocolate;
+}
+.btn8 a::after{
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(127, 255, 212, 0.452);
+  z-index: -1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.btn8 a:hover::after{
+  width: 50%;
+}
+.btn8 a::before{
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(127, 255, 212, 0.452);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  z-index: -1;
+}
+.btn8 a:hover::before{
+  width:50%;
+}
+   /*==================================
+        Button eight end
+   =================================*/
+
+   /*==================================
+        Button nine start
+   =================================*/
+
+.btn9{
+margin: 20px 30px 100px 30px;
+float: left;
+}
+.btn9 a{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  background-color: rgba(100, 148, 237, 0.658);
+  color: white;
+  position: relative;
+  border: 1px solid red;
+  text-transform: uppercase;
+z-index: 1;
+}
+.btn9 a::after{
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: aquamarine;
+  z-index: -1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.btn9 a:hover::after{
+  width: 50%;
+}
+.btn9 a::before{
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: aquamarine;
+  z-index: -1;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.btn9 a:hover::before{
+  width: 50%;
+}
+   /*==================================
+        Button nine end
+   =================================*/
+
+
+
+/*===================================
+  Background overlay practice 05  
+ ==================================
+/* .shobuj{
+  width:800px;
+  height: 500px;
+  background:url(../images/nature.jpg);
+  margin: 0 auto;
+  position: relative;
+  z-index:1;
+}
+.shobuj::after{
+  position: absolute;
+  content: " ";
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.466);
+  z-index:-1;
+}
+.shobuj h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color:white;
+  padding: 230px 0;
+} */
+/* Background overlay practice 04  */
+/* .rabiul{
+  width:700px;
+  height: 500px;
+  background:url(../images/nature.jpg);
+  margin:0 auto;
+  position:relative;
+z-index: 1;
+}
+.rabiul::after{
+  position:absolute;
+  content:" ";
+  top: 0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.486);
+  z-index: -1;
+}
+.rabiul h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 230px 0;
+  color: white;
+} */
+
+
+
+/*===============================
+ Background overlay practic-03 
+ ===============================
+/* 
+.jamal{
+  width: 700px;
+  height:500px;
+  background: url(../images/nature.jpg);
+  margin:0 auto;
+position: relative; 
+z-index:1;
+
+}
+
+.jamal::after{
+  position:absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0, 0, 0, 0.459);
+z-index: -1;
+
+}
+
+  .jamal h2{
+    font-size:30px;
+    font-weight: bold;
+    text-align:center;
+    padding:230px 0;
+color:white;
+}
+   */
+
+
+
+
+/*============================
+   image overlay practice 02
+ =============================
+/* 
+.container{
+  width:700px;
+  height: 500px;
+  margin:0 auto;
+  background: url(../images/nature.jpg);
+  position: relative;
+  z-index:1;
+}
+.container::after{
+  position: absolute;
+  content:"";
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.432);
+  z-index:-1;
+}
+.container h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+padding: 220px 0;
+color:white;
+
+} */
+
+/*============================
+  Image overlay Practice 01 
+ ============================
+/* 
+.background-overlay{
+  width:700px;
+  height: 500px;
+  background: url(../images/nature.jpg);
+  margin:0 auto;
+position: relative;
+z-index: 1;
+}
+.background-overlay::after{
+  position: absolute;
+  content: " ";
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.466);
+  z-index: -1;
+}
+
+.background-overlay h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 210px 0;
+}
+.menu{
+  margin: 100px;
+}
+.menu a{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+position: relative;
+}
+.menu a::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+} */
+
+/*========================
+   design 01 start  
+=========================
+/* .banner{
+background: url(../images/nature.jpg);
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.banner::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
+  z-index: -1;
+}
+.banner h2{
+  color: white;
+text-align: center;
+padding: 250px 0 ;
+}
+.hover-effect{
+  width: 100%;
+
+}
+.hover-effect a{
+  margin: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  position: relative;
+}
+ .hover-effect a::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+.hover-effect a:hover::after{
+width: 50%;
+}
+.hover-effect a::before{
+  position: absolute;
+  content: "";
+bottom: 0;
+right: 0;
+width: 0%;
+height: 2px;
+background-color: black;
+transition: 0.5s;
+-webkit-transition: 0.6s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+-o-transition: 0.5s;
+}
+
+.hover-effect a:hover::before{
+width: 50%;
+} 
+ #hover-inner {
+  position: relative;
+}
+
+#hover-inner::after{
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 50px;
+  width: 0;
+  height: 2px;
+  background-color:blue;
+  transition:0.6s;
+  -webkit-transition:0.6s;
+  -moz-transition:0.6s;
+  -ms-transition:0.6s;
+  -o-transition:0.6s;
+} 
+ #hover-inner:hover::after{
+width: 100px;
+} 
+ #hover-inner::before{
+ position: absolute;
+ content: "";
+ bottom: -10px;
+ left: 50px;
+ width: 0;
+ height: 2px;
+ background-color: red;
+ transition:0.6s;
+ -webkit-transition:0.6s;
+ -moz-transition:0.6s;
+ -ms-transition:0.6s;
+ -o-transition:0.6s;
+} 
+ #hover-inner:hover:before{
+  width: 100px;
+}   
+.about{
+  margin: 120px;
+  overflow: hidden;
+
+}
+.about a{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: blue;
+  font-size: 40px;
+  padding: 20px 30px;
+  position: relative;
+  border: 2px solid black;
+  display: inline-block;
+  z-index: 1;
+  
+}
+.about a:hover{
+  color: #FFFF;
+  border: 2px solid black;
+
+}
+.about a::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0%;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px 30px 0 0;
+  -webkit-border-radius: 30px 30px 0 0;
+  -moz-border-radius: 30px 30px 0 0;
+  -ms-border-radius: 30px 30px 0 0;
+  -o-border-radius: 30px 30px 0 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  z-index: -1;
+}
+.about a:hover::after{
+  height: 180%;
+} */
+/* design 01 end  */
